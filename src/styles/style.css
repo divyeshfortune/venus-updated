@@ -1,0 +1,4 @@
+/* Portfolio Section */
+.margin_top{
+    @apply lg:mt-[6.9375rem] mt-0;
+}
