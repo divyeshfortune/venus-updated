@@ -32,7 +32,7 @@ const Progresswork = () => {
 
   return (
     <section
-      className="landing_section lg:pb-[7.75rem] pb-4 scroll-mt-[100px]"
+      className="landing_section scroll-mt-[100px]"
       id="about"
     >
       <div className="container">

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Testimonial = () => {
   return (
-    <section className="lg:pb-[8.5625rem] pb-[4.5625rem] scroll-mt-[100px]" id='testimonials'>
+    <section className="scroll-mt-[100px]" id='testimonials'>
         <div className="container">
           <div>
             <Image

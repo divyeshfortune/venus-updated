@@ -5,7 +5,7 @@ const Contactform = () => {
   return (
     <section className="bg-midnight_text dark:bg-black relative -z-[-1] overflow-x-hidden">
     <div className="container">
-      <div className="grid md:grid-cols-12 grid-cols-1 md:gap-[1.875rem] gap-0 lg:pt-[7.1875rem] pt-[5.1875rem] lg:pb-[6.5625rem] pb-[4.5625rem]">
+      <div className="grid md:grid-cols-12 grid-cols-1 md:gap-[1.875rem] gap-0">
         <div className="row-start-1 col-start-1 row-end-2 md:col-end-7 col-end-12">
             <p className="round_title text-white">
               <span className="green_round"></span>build everything
@@ -13,36 +13,18 @@ const Contactform = () => {
           <h2 className='sm:text-4xl text-28 font-bold text-white py-12 lg:!leading-[3.5rem] leading-[2.5rem]'>
             Let’s discuss about your project and take it the next level.
           </h2>
-          <div className="flex flex-wrap gap-5 pb-12 border-b border-solid border-[#163958]">
-            <div className="block w-[48%]">
-              <label htmlFor="phone" className='text-[#668199] text-18'>Phone</label>
-              <input
-                className="p-4 pl-0 bg-transparent border-0 placeholder:text-white"
-                type="text"
-                id="phone"
-                name="phone"
-                placeholder="+323-25-8964"
-              />
+          <div className="grid grid-cols-6 pb-12 border-b border-solid border-[#163958]">
+            <div className="col-span-3">
+              <span className='text-[#668199] text-18'>Phone</span>
+              <p className="p-4 pl-0 bg-transparent border-0 text-white" name="phone">+323-25-8964</p>
             </div>
-            <div>
-              <label htmlFor="email" className='text-[#668199] text-18'>Email</label>
-              <input
-                className="p-4 pl-0 bg-transparent border-0 placeholder:text-white"
-                type="text"
-                id="email"
-                name="email"
-                placeholder="me@landingpro.com"
-              />
+            <div className='col-span-3'>
+              <span htmlFor="email" className='text-[#668199] text-18'>Email</span>
+              <p className="p-4 pl-0 bg-transparent border-0 text-white">me@landingpro.com</p>
             </div>
-            <div className="w-full">
-              <label htmlFor="location" className='text-[#668199] text-18'>Location</label>
-              <input
-                className="p-4 pl-0 bg-transparent border-0 placeholder:text-white"
-                type="text"
-                id="location"
-                name="location"
-                placeholder="Mark Avenue, Dalls Road, New York"
-              />
+            <div className="col-span-6">
+              <span htmlFor="location" className='text-[#668199] text-18'>Location</span>
+              <p className="p-4 pl-0 bg-transparent border-0 text-white">Mark Avenue, Dalls Road, New York</p>
             </div>
           </div>
           <div className="pt-12">
@@ -99,8 +81,6 @@ const Contactform = () => {
                 className="!text-midnight_text w-full text-base transition-[0.5s] duration-[all] px-[0.9375rem] py-[0.830rem] !border !border-border !border-solid focus:!border-primary !placeholder:text-grey"
                 type="text"
                 placeholder="First name"
-                onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'First name'"
               />
             </div>
             <div className="sm:w-[calc(49.5%_-_9px)] w-[calc(100%_-_0px)] mx-0 my-2.5">
@@ -108,8 +88,8 @@ const Contactform = () => {
                 type="text"
                 className="!text-midnight_text w-full text-base transition-[0.5s] duration-[all] px-[0.9375rem] py-[0.830rem] !border !border-border !border-solid focus:!border-primary !placeholder:text-grey"
                 placeholder="Last name"
-                onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Last name'"
+ 
+          
               />
             </div>
             <div className="w-full mx-0 my-2.5">
@@ -117,8 +97,7 @@ const Contactform = () => {
                 type="email"
                 className="!text-midnight_text w-full text-base transition-[0.5s] duration-[all] px-[0.9375rem] py-[0.830rem] !border !border-border !border-solid focus:!border-primary !placeholder:text-grey"
                 placeholder="youremail@website.com"
-                onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'youremail@website.com'"
+              
               />
             </div>
             <div className="w-full mx-0 my-2.5">
@@ -126,16 +105,14 @@ const Contactform = () => {
                 className="!text-midnight_text w-full text-base transition-[0.5s] duration-[all] px-[0.9375rem] py-[0.830rem] !border !border-border !border-solid focus:!border-primary !placeholder:text-grey"
                 type="text"
                 placeholder="Country"
-                onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Country'"
+               
               />
             </div>
             <div className="w-full mx-0 my-2.5">
               <textarea
                 className="!text-midnight_text h-[9.375rem] w-full text-base transition-[0.5s] duration-[all] px-[0.9375rem] py-[0.830rem] !border !border-border !border-solid focus:!border-primary !placeholder:text-grey"
                 placeholder="Let us know about your project"
-                onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Let us know about your project'"
+                
               ></textarea>
             </div>
             <div className="flex py-4">

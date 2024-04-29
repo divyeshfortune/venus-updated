@@ -90,11 +90,12 @@ const Header = () => {
                   >
                     <Link
                       href={item.href}
-                      className={`text-midnight_text dark:text-white dark:hover:text-primary text-17 font-normal w-full inline-block transition-all duration-500 py-2 border-b-2 border-solid ${
+                      className={`text-midnight_text dark:text-white dark:hover:text-primary text-17 font-normal lg:w-full w-fit inline-block transition-all duration-500 py-2 border-b-2 lg:border-solid border-none ${
                         activeItem === index
-                          ? "border-primary"
+                          ? "border-primary text-primary"
                           : "border-transparent"
-                      } hover:text-primary hover:border-b-2 hover:border-solid hover:border-primary`}
+                      } hover:text-primary active:text-primary hover:lg:border-b-2 hover:border-solid hover:border-primary`}
+
                       onClick={() => handleItemClick(index)} // Call handleItemClick on click
                     >
                       {item.name}

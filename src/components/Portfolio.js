@@ -5,8 +5,8 @@ import {portfolioinfo} from '../api/data';
 
 const Portfolio = () => {
   return (
-    <section className="lg:pb-[10.5625rem] pb-[4.5625rem]" id="portfolio">
-      <div className="text-center lg:pt-[8.5625rem] pt-[4.5625rem] lg:px-0 px-8">
+    <section id="portfolio">
+      <div className="text-center lg:px-0 px-8">
         <p className="round_title justify-center">
           <span className="green_round"></span>portfolio
         </p>

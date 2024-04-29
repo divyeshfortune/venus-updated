@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className={`dp_backto_top fixed hidden bottom-[6%] md:right-[2%] right-[5%] p-5 cursor-pointer before:content-[''] before:absolute before:w-8 before:h-8 before:bg-[url('/icon/top-arrow.svg')] before:bg-no-repeat before:bg-cover ${isVisible ? 'visible' : ''}`} onClick={scrollToTop}>
+      <div className={`dp_backto_top fixed hidden z-10 bottom-[6%] md:right-[2%] right-[5%] p-5 cursor-pointer before:content-[''] before:absolute before:w-8 before:h-8 before:bg-[url('/icon/top-arrow.svg')] before:bg-no-repeat before:bg-cover ${isVisible ? 'visible' : ''}`} onClick={scrollToTop}>
       </div>
     </footer>
   );

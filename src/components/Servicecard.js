@@ -7,13 +7,13 @@ const Servicescard = () => {
   return (
     <section className="bg-section dark:bg-black" id="services">
       <div className="container">
-        <p className="round_title justify-center lg:pt-[8.75rem] pt-[2.375rem]">
+        <p className="round_title justify-center">
           <span className="green_round"></span>our services
         </p>
         <h2 className="sm:text-4xl text-28 font-bold text-midnight_text md:text-center text-start pt-[1.8125rem] pb-[5.3125rem] md:w-4/6 w-full m-auto">
           Services specifically designed to meet your business needs
         </h2>
-        <div className="grid md:grid-cols-12 sm:grid-cols-8 grid-cols-1 gap-[1.875rem] lg:pb-[8.75rem] pb-[4.75rem]">
+        <div className="grid md:grid-cols-12 sm:grid-cols-8 grid-cols-1 gap-[1.875rem]">
           {Servicebox.map((item, index) => (
             <div
               key={index}

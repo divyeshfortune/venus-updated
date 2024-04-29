@@ -5,7 +5,7 @@ import {blogdetails} from '../api/data';
 
 const Blog = () => {
   return (
-    <section className="blog-list-scn lg:pt-[7.9375rem] pt-[3.9375rem] pb-[3.9375rem] bg-section dark:bg-black" id="blog">
+    <section className="blog-list-scn bg-section dark:bg-black" id="blog">
       <div className="container">
         <div className="blog_heading flex items-baseline justify-between flex-wrap">
             <h2 className="sm:mb-[2.75rem] mb-3">Latest blog & news</h2>

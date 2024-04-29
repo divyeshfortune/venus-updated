@@ -12,8 +12,8 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>
-      <Header/>
+    <>
+     <Header/>
       <Hero/>
       <Counter/>
       <Progresswork/>
@@ -23,7 +23,7 @@ const page = () => {
       <Blog/>
       <Contactform/>
       <Footer/>
-    </div>
+    </>
   )
 }
 
