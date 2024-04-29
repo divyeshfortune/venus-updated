@@ -11,10 +11,12 @@ const Portfolio = () => {
           <span className="green_round"></span>portfolio
         </p>
         <h2 className="pt-[1.8125rem] pb-[1.0625rem]">Explore my portfolio showcase</h2>
-        <p className="pb-[3.5625rem] text-16 font-normal text-grey max-w-[28.125rem] mx-auto">
-          Dive into a curated collection of my finest work, showcasing expertise
-          across various industries.
-        </p>
+        <div className="pb-[3.5625rem] inline-flex">
+          <p className="text-16 font-normal text-grey max-w-[28.125rem]">
+            Dive into a curated collection of my finest work, showcasing expertise
+            across various industries.
+          </p>
+        </div>
       </div>
       <div className="flex flex-wrap gap-[2.125rem] lg:px-[2.125rem] px-0 max-w-[120rem] w-full justify-center m-auto">
         {portfolioinfo.map((item, index) => (

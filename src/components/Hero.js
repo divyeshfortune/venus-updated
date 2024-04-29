@@ -14,7 +14,9 @@ const Hero = () => {
               <span className="green_round"></span>build everything
             </p>
             <h1 className="mt-6 mb-[1.8125rem] dark:text-white">Unveiling My Professional Odyssey: Portfolio Highlights</h1>
-            <p className="text-21 font-normal text-grey mb-[2.125rem] max-w-[25rem]">A brief introduction about myself and my professional objectives.</p>
+            <div className="mb-[2.125rem]">
+              <p className="text-21 font-normal text-grey max-w-[25rem]">A brief introduction about myself and my professional objectives.</p>
+            </div>
             <Link href="#" className="btn !px-[2.1rem]">Get Started</Link>
             <div className="flex items-center mt-[3.375rem]">
               <div className="flex items-center">

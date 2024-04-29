@@ -56,12 +56,12 @@ const Progresswork = () => {
             <h2 className="pt-[2.125rem] pb-8">
               Build amazing websites and landing pages with ease
             </h2>
-            <p className="landing_descript text-grey text-base pb-[3.3125rem]">
+            <p className="landing_descript text-grey text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
               ipsum suspendisse ultrices gravida.
             </p>
-            <div className="block max-w-[50rem] mx-auto">
+            <div className="block max-w-[50rem] mx-auto pt-[3.3125rem]">
               {Progress.map((item, index) => (
                 <div
                   key={index}
