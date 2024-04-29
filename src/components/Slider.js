@@ -65,7 +65,7 @@ const Slider = () => {
             </div>
           </div>
         </div>
-        <div class="blaze-pagination"></div>
+        <div className="blaze-pagination"></div>
       </div>
     </div>
   );

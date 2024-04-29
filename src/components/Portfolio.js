@@ -22,17 +22,17 @@ const Portfolio = () => {
         {portfolioinfo.map((item, index) => (
             <Link key={index} href="/portfolio-details" className={`w-[18rem] group ${index % 2 !== 0 ? 'margin_top' : ''}`}>
                 <Image
-                src={item.image}
-                alt={item.alt}
-                width={0}
-                height={0}
-                layout="responsive"
-                quality={100}
-                sizes="100vh"
-                className="transition-all duration-500 group-hover:scale-[1.1] group-hover:cursor-pointer"
+                  src={item.image}
+                  alt={item.alt}
+                  width={0}
+                  height={0}
+                  layout="responsive"
+                  quality={100}
+                  sizes="100vh"
+                  className="transition-all duration-500 group-hover:scale-[1.1] group-hover:cursor-pointer"
                 />
             <h4 className="pb-[0.3125rem] pt-[2.1875rem] group-hover:text-primary group-hover:cursor-pointer">{item.title}</h4>
-            <p className="text-[#547593] font-normal text-18 group-hover:text-primary group-hover:cursor-pointer">{item.info}</p>
+            <p className="text-secondary font-normal text-18 group-hover:text-primary group-hover:cursor-pointer">{item.info}</p>
           </Link>
         ))}
       </div>
