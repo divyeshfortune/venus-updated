@@ -4,6 +4,8 @@ import "../styles/style.css";
 import Header from "@/components/Header";
 import Image from "next/image";
 import Link from "next/link";
+import Blog from "@/components/Blog";
+import Footer from "@/components/Footer";
 
 const Blogdetails = () => {
   return (
@@ -69,11 +71,11 @@ const Blogdetails = () => {
                   remaining essentially unchanged. It was popularised in the
                 </p>
                 <ul className="pb-14">
-                  <li className="relative text-secondary text-18 font-medium pl-7 flex items-center py-2 before:content-[''] before:left-0 before:absolute before:bg-[url('/icon/right-lightblue.svg')] before:bg-no-repeat before:bg-contain before:w-4 before:h-4">
+                  <li className="relative text-secondary text-18 font-medium pl-9 flex items-center py-2 before:content-[''] before:left-0 before:absolute before:bg-[url('/icon/right-icon-blog.svg')] before:bg-no-repeat before:bg-contain before:w-6 before:h-6">
                     Vivamus eu lacus scelerisque, placerat commodo lectus.
                   </li>
-                  <li className="relative text-secondary text-18 font-medium pl-7 flex items-center py-2 before:content-[''] before:left-0 before:absolute before:bg-[url('/icon/right-lightblue.svg')] before:bg-no-repeat before:bg-contain before:w-4 before:h-4">Etiam etanteatex porta fringilla.</li>
-                  <li className="relative text-secondary text-18 font-medium pl-7 flex items-center py-2 before:content-[''] before:left-0 before:absolute before:bg-[url('/icon/right-lightblue.svg')] before:bg-no-repeat before:bg-contain before:w-4 before:h-4">
+                  <li className="relative text-secondary text-18 font-medium pl-9 flex items-center py-2 before:content-[''] before:left-0 before:absolute before:bg-[url('/icon/right-icon-blog.svg')] before:bg-no-repeat before:bg-contain before:w-6 before:h-6">Etiam etanteatex porta fringilla.</li>
+                  <li className="relative text-secondary text-18 font-medium pl-9 flex items-center py-2 before:content-[''] before:left-0 before:absolute before:bg-[url('/icon/right-icon-blog.svg')] before:bg-no-repeat before:bg-contain before:w-6 before:h-6">
                     Nullam dignissim sem eu magna aliquet, sit amet volutpat
                     tellus
                   </li>
@@ -124,6 +126,9 @@ const Blogdetails = () => {
           </div>
         </div>
       </section>
+
+      <Blog/>
+      <Footer/>
     </>
   );
 };

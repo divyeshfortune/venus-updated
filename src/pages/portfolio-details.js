@@ -61,11 +61,13 @@ const portfoliodetails = () => {
           </div>
         </div>
       </section>
-      <div className="border-b border-solid border-border">
+      <div className="border-b border-solid border-[#2F73F24D] max-w-[73.125rem] m-auto">
         <Testimonial/>
       </div>
       <Portfolio/>
-      <Footer/>
+      <div className="border-t border-solid border-[#2F73F24D] max-w-[73.125rem] m-auto">
+        <Footer/>
+      </div>
     </main>
     </>
   );
