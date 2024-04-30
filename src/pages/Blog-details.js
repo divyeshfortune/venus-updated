@@ -57,7 +57,7 @@ const Blogdetails = () => {
               />
             </div>
             <div className="grid grid-cols-12 gap-[1.875rem] mt-12">
-              <div className="row-start-1 col-start-1 row-end-2 col-end-9">
+              <div className="col-span-8">
                 <h2 className="pb-8">Main Heading & Points</h2>
                 <p className="text-18 text-secondary font-normal pb-12">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -101,20 +101,20 @@ const Blogdetails = () => {
                     </div>
                 </div>
               </div>
-              <div className="row-start-1 col-start-10 row-end-2 col-end-[16] bg-white shadow-[0px_20px_80px_0px_#68758D26] px-10 rounded-lg h-[46%]">
+              <div className="col-span-4 bg-white shadow-[0px_20px_80px_0px_#68758D26] px-10 rounded-lg h-[42.5%]">
                 <span className="text-24 font-medium text-midnight_text inline-block py-6">Share</span>
-                <div className="flex flex-col gap-[0.875rem] pb-14 border-b border-solid border-[#F4F5F6]">
+                <div className="flex flex-col gap-[0.875rem] pb-12 border-b border-solid border-[#F4F5F6]">
                     <Link href="#" className="bg-[#526FA3] py-[0.90rem] rounded-lg text-xl font-medium text-white flex items-center gap-[1.5rem] px-6 hover:bg-[#3e537a] hover:scale-[1.1] transition-all duration-500">
                         <i className="bg-[url('/icon/facebook-blog.svg')] bg-no-repeat bg-contain w-[1.3125rem] h-[1.3125rem] inline-block"></i>
                         Facebook</Link>
-                    <Link href="#" className="bg-[#4EB8EC] py-[0.90rem] rounded-lg text-xl font-medium text-white flex items-center gap-[1.5rem] px-6">
+                    <Link href="#" className="bg-[#4EB8EC] py-[0.90rem] rounded-lg text-xl font-medium text-white flex items-center gap-[1.5rem] px-6 hover:bg-[#469dc9] hover:scale-[1.1] transition-all duration-500">
                         <i className="bg-[url('/icon/twitter-blog.svg')] bg-no-repeat bg-contain w-[1.4375rem] h-[1.4375rem] inline-block"></i>
                         Twitter</Link>
-                    <Link href="#" className="bg-[#3C86AD] py-[0.90rem] rounded-lg text-xl font-medium text-white flex items-center gap-[1.5rem] px-6">
+                    <Link href="#" className="bg-[#3C86AD] py-[0.90rem] rounded-lg text-xl font-medium text-white flex items-center gap-[1.5rem] px-6 hover:bg-[#337192] hover:scale-[1.1] transition-all duration-500">
                         <i className="bg-[url('/icon/Linkedin-blog.svg')] bg-no-repeat bg-contain w-[1.4375rem] h-[1.4375rem] inline-block"></i>
                         Linkedin</Link>
                 </div>
-                <div className="mt-14">
+                <div className="mt-6">
                     <span className="text-24 font-medium text-midnight_text inline-block py-5">Join our newsletter</span>
                     <input type="text" name="email address" placeholder="Email address" className="py-3 px-4 !border !border-solid !border-[#C0D5FB] !mb-3" />
                     <Link href="#" className="btn w-full text-center">Subscribe</Link>
