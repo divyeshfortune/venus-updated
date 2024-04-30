@@ -10,15 +10,15 @@ const Portfolio = () => {
         <p className="round_title justify-center">
           <span className="green_round"></span>portfolio
         </p>
-        <h2 className="pt-[1.8125rem] pb-[1.0625rem]">Explore my portfolio showcase</h2>
+        <h2 className="pt-[1.8125rem] pb-[1.0625rem]" data-aos="fade-up">Explore my portfolio showcase</h2>
         <div className="pb-[3.5625rem] inline-flex">
-          <p className="text-16 font-normal text-grey max-w-[28.125rem]">
+          <p className="text-16 font-normal text-grey max-w-[28.125rem]" data-aos="fade-down">
             Dive into a curated collection of my finest work, showcasing expertise
             across various industries.
           </p>
         </div>
       </div>
-      <div className="flex flex-wrap gap-[2.125rem] lg:px-[2.125rem] px-0 max-w-[120rem] w-full justify-center m-auto">
+      <div className="flex flex-wrap gap-[2.125rem] lg:px-[2.125rem] px-0 max-w-[120rem] w-full justify-center m-auto" data-aos="fade">
         {portfolioinfo.map((item, index) => (
             <Link key={index} href="/portfolio-details" className={`w-[18rem] group ${index % 2 !== 0 ? 'margin_top' : ''}`}>
                 <Image

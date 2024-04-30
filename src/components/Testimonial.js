@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Testimonial = () => {
   return (
-    <section className="scroll-mt-[100px]" id='testimonials'>
+    <section className="scroll-mt-[100px]" id='testimonials' data-aos="fade-up">
         <div className="container">
           <div>
             <Image

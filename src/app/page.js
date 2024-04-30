@@ -1,3 +1,4 @@
+"use client"
 import Blog from '@/components/Blog'
 import Contactform from '@/components/Contactfrom'
 import Counter from '@/components/Counter'
@@ -8,9 +9,18 @@ import Portfolio from '@/components/Portfolio'
 import Progresswork from '@/components/Progresswork'
 import Servicescard from '@/components/Servicecard'
 import Testimonial from '@/components/Testimonial'
-import React from 'react'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const page = () => {
+
+  useEffect(() => {
+    AOS.init({
+      // Global settings for AOS
+    });
+  }, []);
+
   return (
     <>
      <Header/>

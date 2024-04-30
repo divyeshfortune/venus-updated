@@ -5,7 +5,7 @@ import Image from "next/image";
 const Counter = () => {
     
   return (
-    <section>
+    <section data-aos="fade-down">
       <div className="container">
         <div className="flex flex-wrap items-center md:justify-between justify-center md:gap-0 gap-9">
           {count.map((item, index) => (

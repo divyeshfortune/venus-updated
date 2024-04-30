@@ -88,8 +88,6 @@ const Contactform = () => {
                 type="text"
                 className="!text-midnight_text w-full text-base transition-[0.5s] duration-[all] px-[0.9375rem] py-[0.830rem] !border !border-border !border-solid focus:!border-primary !placeholder:text-grey"
                 placeholder="Last name"
- 
-          
               />
             </div>
             <div className="w-full mx-0 my-2.5">

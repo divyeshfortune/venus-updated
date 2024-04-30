@@ -17,7 +17,7 @@ const Servicescard = () => {
           {Servicebox.map((item, index) => (
             <div
               key={index}
-              className="col-span-4 bg-white dark:bg-[#b0e0e6] text-center py-14 px-7 shadow-[0px_3px_20px_0px_#8E9CA90D] rounded-md"
+              className="col-span-4 bg-white dark:bg-[#b0e0e6] text-center py-14 px-7 shadow-[0px_3px_20px_0px_#8E9CA90D] rounded-md" data-aos="fade"
             >
               <Image src={item.icon} alt="Service Box" width={0} height={0} className="w-[2.5625rem] h-10 bg-no-repeat inline-block bg-contain"/>
               <h3 className="max-w-[10.625rem] mx-auto pb-6 pt-[2.1875rem]">
