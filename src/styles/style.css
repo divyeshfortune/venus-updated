@@ -1,5 +1,5 @@
 .margin_top{
-    @apply mt-[6.25rem];
+    @apply md:mt-[6.25rem] mt-[0];
 }
 /* Slider Section Start */
 .blaze-pagination{
