@@ -1,6 +1,4 @@
 import React from "react";
-import "../app/globals.css";
-import "../styles/style.css";
 import Header from "@/components/Header";
 import Image from "next/image";
 import Link from "next/link";

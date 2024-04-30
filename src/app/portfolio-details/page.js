@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import React from "react";
-import "../app/globals.css";
 import Slider from "@/components/Slider";
 import Testimonial from "@/components/Testimonial";
 import Portfolio from "@/components/Portfolio";
@@ -9,7 +8,7 @@ import Footer from "@/components/Footer";
 const portfoliodetails = () => {
   return (
     <>
-    <Header />
+    <Header/>
     <main className="inner_page">
       <section>
         <div className="container">

@@ -15,7 +15,7 @@ const Blog = () => {
         </div>
         <div className="blog-list grid md:grid-cols-12 sm:grid-cols-8 grid-cols-1 gap-[1.875rem]">
           {blogdetails.map((item, index) => (
-            <Link key={index} href="/Blog-details" className="blog-item pricing col-span-4 group">
+            <Link key={index} href="/blog-details" className="blog-item pricing col-span-4 group">
             <div className="blog-img max-w-full overflow-hidden relative w-full lg:h-[15.25rem] h-auto">
               <Image
                 src={item.image}
