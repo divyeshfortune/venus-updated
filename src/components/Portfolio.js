@@ -18,7 +18,7 @@ const Portfolio = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-wrap gap-[2.125rem] lg:px-[2.125rem] px-0 max-w-[120rem] w-full justify-center m-auto" data-aos="fade">
+      <div className="flex flex-wrap gap-[2.125rem] lg:px-[2.125rem] px-0 max-w-[120rem] w-full justify-center m-auto" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
         {portfolioinfo.map((item, index) => (
             <Link key={index} href={`/portfolio-details/${item.slug}`} className={`w-[18rem] group ${index % 2 !== 0 ? 'margin_top' : ''}`}>
                 <Image

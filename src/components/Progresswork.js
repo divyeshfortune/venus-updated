@@ -37,7 +37,7 @@ const Progresswork = () => {
     >
       <div className="container">
         <div className="landing_main grid lg:grid-cols-12 sm:grid-cols-6 grid-cols-1 items-center gap-[1.875rem]">
-          <div className="landing_image lg:col-span-6 col-span-3" data-aos="fade-left">
+          <div className="landing_image lg:col-span-6 col-span-3" data-aos="fade-right">
             <Image
               src="/images/progress-work.png"
               alt="logo"
@@ -49,7 +49,7 @@ const Progresswork = () => {
               className=""
             />
           </div>
-          <div className="landing_content lg:col-span-6 col-span-3" data-aos="fade-right">
+          <div className="landing_content lg:col-span-6 col-span-3" data-aos="fade-left">
             <p className="round_title">
               <span className="green_round"></span>build everything
             </p>

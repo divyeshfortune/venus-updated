@@ -9,7 +9,7 @@ const Hero = () => {
     <section>
       <div className="container">
         <div className="grid lg:grid-cols-12 sm:grid-cols-6 grid-cols-1 gap-[1.875rem] items-center">
-          <div className="lg:col-span-6 col-span-3" data-aos="fade-left">
+          <div className="lg:col-span-6 col-span-3" data-aos="fade-right">
             <p className="round_title">
               <span className="green_round"></span>build everything
             </p>
@@ -56,7 +56,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="lg:col-span-6 col-span-3 relative before:absolute before:content-[''] before:bg-[url('/icon/line-leyar.svg')] before:bg-no-repeat before:left-1/2 before:top-0 before:h-[5.75rem] before:w-[13rem] before:-z-10 before:translate-x-[70%] before:-translate-y-[40%] lg:before:inline-block before:hidden after:absolute after:content-[''] after:bg-[url('/icon/round-leyar.svg')] after:bg-no-repeat xl:after:inline-block after:hidden after:left-0 after:bottom-0 after:h-[6.3125rem] after:w-[6.3125rem] after:-z-10 after:-translate-x-1/2 after:translate-y-1/2" data-aos="fade-right">
+          <div className="lg:col-span-6 col-span-3 relative before:absolute before:content-[''] before:bg-[url('/icon/line-leyar.svg')] before:bg-no-repeat before:left-1/2 before:top-0 before:h-[5.75rem] before:w-[13rem] before:-z-10 before:translate-x-[70%] before:-translate-y-[40%] lg:before:inline-block before:hidden after:absolute after:content-[''] after:bg-[url('/icon/round-leyar.svg')] after:bg-no-repeat xl:after:inline-block after:hidden after:left-0 after:bottom-0 after:h-[6.3125rem] after:w-[6.3125rem] after:-z-10 after:-translate-x-1/2 after:translate-y-1/2" data-aos="fade-left">
             <Image
               src="/images/hero-image.png"
               alt="hero-image"

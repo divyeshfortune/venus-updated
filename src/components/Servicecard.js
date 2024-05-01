@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import {Servicebox} from "../api/data";
+import { Servicebox } from "../api/data";
 import Image from "next/image";
 
 const Servicescard = () => {
+  const animations = ['fade-right', 'fade-up', 'fade-left']; // Define an array of animation types
   return (
     <section className="bg-section dark:bg-black" id="services">
       <div className="container">
@@ -17,13 +18,24 @@ const Servicescard = () => {
           {Servicebox.map((item, index) => (
             <div
               key={index}
-              className="col-span-4 bg-white dark:bg-[#b0e0e6] text-center py-14 px-7 shadow-[0px_3px_20px_0px_#8E9CA90D] rounded-md" data-aos="fade"
+              className="col-span-4 bg-white dark:bg-[#b0e0e6] text-center py-14 px-7 shadow-[0px_3px_20px_0px_#8E9CA90D] rounded-md"
+              data-aos={animations[index % animations.length]} // Select animation type based on index
+              data-aos-delay={`${index * 200}`}
+              data-aos-duration="1000"
             >
-              <Image src={item.icon} alt="Service Box" width={0} height={0} className="w-[2.5625rem] h-10 bg-no-repeat inline-block bg-contain"/>
+              <Image
+                src={item.icon}
+                alt="Service Box"
+                width={0}
+                height={0}
+                className="w-[2.5625rem] h-10 bg-no-repeat inline-block bg-contain"
+              />
               <h3 className="max-w-[10.625rem] mx-auto pb-6 pt-[2.1875rem]">
                 {item.title}
               </h3>
-              <p className="text-grey text-16 font-normal">{item.description}</p>
+              <p className="text-grey text-16 font-normal">
+                {item.description}
+              </p>
               <Link
                 href="#"
                 className="hover:text-midnight_text inline-block text-18 font-medium text-primary pt-11 group"

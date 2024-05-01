@@ -13,7 +13,7 @@ const Blog = () => {
                 <i className="m_blog_arrow bg-[url('/icon/blog-arrow.svg')] bg-no-repeat inline-block w-[1.0625rem] h-3 bg-cover group-hover:bg-[url('/icon/blog-arrow-hover.svg')]"></i>
             </Link>
         </div>
-        <div className="blog-list grid md:grid-cols-12 sm:grid-cols-8 grid-cols-1 gap-[1.875rem]" data-aos="fade-down">
+        <div className="blog-list grid md:grid-cols-12 sm:grid-cols-8 grid-cols-1 gap-[1.875rem]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
           {blogs.map((post, index) => (
             <Link key={index} href={`/blog-details/${post.slug}`} className="blog-item pricing col-span-4 group">
             <div className="blog-img max-w-full overflow-hidden relative w-full lg:h-[15.25rem] h-auto">
