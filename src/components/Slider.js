@@ -4,7 +4,7 @@ import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const SlickSlider = (itemImage) => {
+const SlickSlider = ({itemImage}) => {
   const settings = {
     autoplay: true,
     dots: true,
@@ -43,7 +43,7 @@ const SlickSlider = (itemImage) => {
       </div>
       <div className="portfolio_slide">
         <Image
-          src="/images/slide_2.png"
+          src={itemImage}
           alt="Slider"
           width={0}
           height={0}
@@ -55,7 +55,7 @@ const SlickSlider = (itemImage) => {
 
       <div className="portfolio_slide">
         <Image
-          src="/images/slide_1.png"
+          src={itemImage}
           alt="Slider"
           width={0}
           height={0}
@@ -67,7 +67,7 @@ const SlickSlider = (itemImage) => {
 
       <div className="portfolio_slide">
         <Image
-          src="/images/slide_2.png"
+          src={itemImage}
           alt="Slider"
           width={0}
           height={0}
