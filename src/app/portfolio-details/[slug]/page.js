@@ -1,11 +1,23 @@
+"use client";
 import Header from "@/components/Header";
 import React from "react";
 import Slider from "@/components/Slider";
 import Testimonial from "@/components/Testimonial";
 import Portfolio from "@/components/Portfolio";
 import Footer from "@/components/Footer";
+import { portfolioinfo } from "@/api/data";
+import { useParams } from "next/navigation"; // Assuming you're using React Router
 
-const portfoliodetails = () => {
+const Portfolios = () => {
+
+  const { slug } = useParams();
+
+  // Find the blog post by slug
+  const item = portfolioinfo.find((item) => item.slug === slug);
+
+  if (!item) {
+    return <div>Loading...</div>;
+  }
   return (
     <>
     <Header/>
@@ -13,7 +25,7 @@ const portfoliodetails = () => {
       <section>
         <div className="container">
           <div className="branding_heading">
-            <h2 className="pb-[1.1875rem]">Creative Branding</h2>
+            <h2 className="pb-[1.1875rem]">{item.title}</h2>
             <div className="pb-[3.6875rem]">
                 <p className="text-secondary text-xl max-w-[38.6875rem]">
                 We are a dedicated team of passionate product managers, full stack
@@ -21,7 +33,7 @@ const portfoliodetails = () => {
                 </p>
             </div>
           </div>
-          <Slider />
+          <Slider itemImage={item.image}/>
         </div>
       </section>
 
@@ -72,4 +84,4 @@ const portfoliodetails = () => {
   );
 };
 
-export default portfoliodetails;
+export default Portfolios;

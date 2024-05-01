@@ -1,11 +1,24 @@
+"use client";
 import React from "react";
 import Header from "@/components/Header";
 import Image from "next/image";
+import { blogs } from "@/api/data";
+import { useParams } from "next/navigation"; // Assuming you're using React Router
 import Link from "next/link";
 import Blog from "@/components/Blog";
 import Footer from "@/components/Footer";
 
-const Blogdetails = () => {
+const BlogPost = () => {
+
+  const { slug } = useParams();
+
+  // Find the blog post by slug
+  const post = blogs.find((post) => post.slug === slug);
+
+  if (!post) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <>
       <Header />
@@ -15,15 +28,17 @@ const Blogdetails = () => {
             <div className="grid md:grid-cols-12 grid-cols-1 pb-[3.5625rem]">
               <div className="col-span-8">
                 <div className="pb-[1.375rem]">
-                  <span className="blog_hashtage">Trends</span>
+                  <span className="blog_hashtage">{post.lable}</span>
                   <span className="text-[#95AEC6] text-base font-normal border-r border-solid border-[#95AEC6] px-3">
-                    18 Hours ago
+                    {post.timing}
                   </span>
                   <span className="text-[#95AEC6] text-base font-normal px-3">
                     13 Comments
                   </span>
                 </div>
-                <h1 className="md:pb-0 pb-7">Augue OLMO, luctus neque purus and ipsum neque libero</h1>
+                <h1 className="md:pb-0 pb-7">
+                {post.title}
+                </h1>
               </div>
               <div className="flex items-center md:justify-center justify-start gap-6 col-span-4">
                 <Image
@@ -46,7 +61,7 @@ const Blogdetails = () => {
             </div>
             <div>
               <Image
-                src="/images/blog.jpg"
+                src={post.image}
                 alt="blog"
                 width={0}
                 height={0}
@@ -131,4 +146,4 @@ const Blogdetails = () => {
   );
 };
 
-export default Blogdetails;
+export default BlogPost;

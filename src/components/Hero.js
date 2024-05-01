@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section>
       <div className="container">
-        <div className="grid lg:grid-cols-12 sm:grid-cols-6 grid-cols-1 gap-[1.875rem]">
+        <div className="grid lg:grid-cols-12 sm:grid-cols-6 grid-cols-1 gap-[1.875rem] items-center">
           <div className="lg:col-span-6 col-span-3" data-aos="fade-left">
             <p className="round_title">
               <span className="green_round"></span>build everything

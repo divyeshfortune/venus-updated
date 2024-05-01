@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {blogdetails} from '../api/data';
+import {blogs} from '../api/data';
 
 const Blog = () => {
   return (
@@ -13,12 +13,12 @@ const Blog = () => {
                 <i className="m_blog_arrow bg-[url('/icon/blog-arrow.svg')] bg-no-repeat inline-block w-[1.0625rem] h-3 bg-cover group-hover:bg-[url('/icon/blog-arrow-hover.svg')]"></i>
             </Link>
         </div>
-        <div className="blog-list grid md:grid-cols-12 sm:grid-cols-8 grid-cols-1 gap-[1.875rem]" data-aos="fade-up-right">
-          {blogdetails.map((item, index) => (
-            <Link key={index} href="/blog-details" className="blog-item pricing col-span-4 group">
+        <div className="blog-list grid md:grid-cols-12 sm:grid-cols-8 grid-cols-1 gap-[1.875rem]" data-aos="fade-down">
+          {blogs.map((post, index) => (
+            <Link key={index} href={`/blog-details/${post.slug}`} className="blog-item pricing col-span-4 group">
             <div className="blog-img max-w-full overflow-hidden relative w-full lg:h-[15.25rem] h-auto">
               <Image
-                src={item.image}
+                src={post.image}
                 alt="blog"
                 width={0}
                 height={0}
@@ -27,11 +27,11 @@ const Blog = () => {
                 sizes="100vh"
                 className="object-cover w-full h-full transition duration-500 group-hover:scale-[1.2]"
               />
-              <span className="postdate py-[0.475rem] max-w-[4.9375rem] w-full text-center bg-primary text-white absolute left-0 top-0 mt-[0.9375rem] ml-[0.9375rem] rounded-[0.25rem] text-[0.8125rem] leading-[1.0581rem] font-medium">{item.lable}</span>
+              <span className="postdate py-[0.475rem] max-w-[4.9375rem] w-full text-center bg-primary text-white absolute left-0 top-0 mt-[0.9375rem] ml-[0.9375rem] rounded-[0.25rem] text-[0.8125rem] leading-[1.0581rem] font-medium">{post.lable}</span>
             </div>
             <div className="blog-cont">
-                <h5 className="pt-[1.5rem] pb-[0.875rem] group-hover:text-primary">{item.title}</h5>
-                <span className="text-[0.8125rem] leading-7 text-[#ACBCCA]">{item.timing}</span>
+                <h5 className="pt-[1.5rem] pb-[0.875rem] group-hover:text-primary">{post.title}</h5>
+                <span className="text-[0.8125rem] leading-7 text-[#ACBCCA]">{post.timing}</span>
             </div>
           </Link>
           ))}

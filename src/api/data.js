@@ -49,56 +49,65 @@ export const menuItems = [
     },
   ]
 
+
   export const portfolioinfo = [
     {
       image: '/images/cozycasa.png',
       alt: 'Portfolio',
       title: 'Cozycasa',
+      slug: 'Cozycasa',
       info: 'Designation'
     },
     {
       image: '/images/mars.png',
       alt: 'Portfolio',
       title: 'Mars',
+      slug: 'Mars',
       info: 'Designation'
     },
     {
       image: '/images/humans.png',
       alt: 'Portfolio',
       title: 'Everyday Humans',
+      slug: 'everyday-humans',
       info: 'Designation'
     },
     {
       image: '/images/roket-squred.png',
       alt: 'Portfolio',
       title: 'Rocket Squared',
+      slug: 'rocket-squared',
       info: 'Designation'
     },
     {
       image: '/images/panda-logo.png',
       alt: 'Portfolio',
       title: 'Panda Logo',
+      slug: 'panda-logo',
       info: 'Designation'
     },
   ]
 
-  export const blogdetails = [
+  export const blogs = [
     {
       image: '/images/pricing.png',
       lable: 'Pricing',
       title: 'Business from the brink of ruin by optimizing our website....',
+      slug: 'business-from-the-brink-of-ruin-by-optimizing-our-website',
       timing: '16 Hours ago'
     },
     {
       image: '/images/meeting.png',
       lable: 'Meeting',
       title: 'The work is top-notch and I consistently outrank all my...',
+      slug: 'the-work-is-top-notch-and-i-consistently-outrank-all-my',
       timing: '1 Daya ago'
     },
     {
       image: '/images/updates.png',
       lable: 'Updates',
       title: 'Grow my business through organic search and marketing...',
+      slug: 'grow-my-business-through-organic-search-and-marketing',
       timing: '20-04-2022'
     },
   ]

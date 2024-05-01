@@ -1,74 +1,83 @@
-"use client";
-import { useEffect } from "react";
-import BlazeSlider from "blaze-slider";
-import "blaze-slider/dist/blaze.css";
+import React from "react";
+import Slider from "react-slick";
 import Image from "next/image";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const Slider = () => {
-  useEffect(() => {
-    const el = document.querySelector(".blaze-slider");
-    if (el) {
-      new BlazeSlider(el, {
-        all: {
-          enableAutoplay: true,
-          autoplayInterval: 2000,
-          transitionDuration: 300,
-          slidesToShow: 2,
+const SlickSlider = (itemImage) => {
+  const settings = {
+    autoplay: true,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 479, // Adjust breakpoint as needed
+        settings: {
+          slidesToShow: 1, // Change slidesToShow for smaller screens
         },
-        "(max-width: 900px)": {
-          slidesToShow: 2,
+      },
+      {
+        breakpoint: 1024, // Adjust breakpoint as needed
+        settings: {
+          slidesToShow: 2, // Change slidesToShow for smaller screens
         },
-        "(max-width: 500px)": {
-          slidesToShow: 1,
-        },
-      });
-    }
-  }, []);
+      },
+    ],
+  };
 
   return (
-    <div class="blaze-slider portfolio_slider">
-      <div class="blaze-container">
-        <div class="blaze-track-container">
-          <div class="blaze-track">
-            <div className="portfolio_slide">
-              <Image
-                src="/images/slide_1.png"
-                alt="Slider"
-                width={0}
-                height={0}
-                layout="responsive"
-                quality={100}
-                sizes="100vh"
-              />
-            </div>
-            <div className="portfolio_slide">
-              <Image
-                src="/images/slide_1.png"
-                alt="Slider"
-                width={0}
-                height={0}
-                layout="responsive"
-                quality={100}
-                sizes="100vh"
-              />
-            </div>
-            <div className="portfolio_slide">
-              <Image
-                src="/images/slide_1.png"
-                alt="Slider"
-                width={0}
-                height={0}
-                layout="responsive"
-                quality={100}
-                sizes="100vh"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="blaze-pagination"></div>
+    <Slider {...settings}>
+      <div className="portfolio_slide">
+        <Image
+          src={itemImage}
+          alt="Slider"
+          width={0}
+          height={0}
+          layout="responsive"
+          quality={100}
+          sizes="100vh"
+        />
       </div>
-    </div>
+      <div className="portfolio_slide">
+        <Image
+          src="/images/slide_2.png"
+          alt="Slider"
+          width={0}
+          height={0}
+          layout="responsive"
+          quality={100}
+          sizes="100vh"
+        />
+      </div>
+
+      <div className="portfolio_slide">
+        <Image
+          src="/images/slide_1.png"
+          alt="Slider"
+          width={0}
+          height={0}
+          layout="responsive"
+          quality={100}
+          sizes="100vh"
+        />
+      </div>
+
+      <div className="portfolio_slide">
+        <Image
+          src="/images/slide_2.png"
+          alt="Slider"
+          width={0}
+          height={0}
+          layout="responsive"
+          quality={100}
+          sizes="100vh"
+        />
+      </div>
+    </Slider>
   );
 };
 
-export default Slider;
+export default SlickSlider;

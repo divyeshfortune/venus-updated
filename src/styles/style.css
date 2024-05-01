@@ -1,24 +1,16 @@
 .margin_top{
     @apply md:mt-[6.25rem] mt-[0];
 }
-/* Slider Section Start */
-.blaze-pagination{
-    @apply flex gap-[0.875rem] justify-center mt-8;
+/* Slick Slider */
+.slick-slide, .portfolio_slide{
+    @apply focus-visible:!outline-0;
 }
-.blaze-pagination button.active{
-    @apply bg-primary border-white scale-[1.2];
+.slick-dots li.slick-active button:before{
+    @apply !opacity-100 !text-primary !w-4 !h-4;
 }
-.blaze-pagination button:hover{
-    @apply scale-[1.2];
+.slick-dots li button:before{
+    @apply !text-base !text-[#BBC8D5] !opacity-100;
 }
-.blaze-pagination button{
-    @apply bg-[#BBC8D5] border-none rounded-full text-[#0000] cursor-pointer;
-    transition: 0.5s ease-in-out;
+.portfolio_slide{
+    @apply !pr-4;
 }
-.blaze-pagination button, .example-slider .blaze-pagination button{
-    @apply w-4 h-4;
-}
-
-/* .blog_facebook{
-    @apply bg-[url('/icon/facebook.svg')] bg-no-repeat bg-contain w-[0.8125rem] h-5 inline-block;
-} */
