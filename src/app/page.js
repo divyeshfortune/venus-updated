@@ -13,8 +13,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const page = () => {
-
+export default function Page() {
   useEffect(() => {
     AOS.init({
       // Global settings for AOS
@@ -23,18 +22,16 @@ const page = () => {
 
   return (
     <>
-     <Header/>
-      <Hero/>
-      <Counter/>
-      <Progresswork/>
-      <Servicescard/>
-      <Portfolio/>
-      <Testimonial/>
-      <Blog/>
-      <Contactform/>
-      <Footer/>
+      <Header />
+      <Hero />
+      <Counter />
+      <Progresswork />
+      <Servicescard />
+      <Portfolio />
+      <Testimonial />
+      <Blog />
+      <Contactform />
+      <Footer />
     </>
-  )
+  );
 }
-
-export default page
