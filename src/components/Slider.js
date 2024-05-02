@@ -43,7 +43,7 @@ const SlickSlider = ({itemImage}) => {
       </div>
       <div className="portfolio_slide">
         <Image
-          src={itemImage}
+          src="/images/slide_1.png"
           alt="Slider"
           width={0}
           height={0}
@@ -55,7 +55,7 @@ const SlickSlider = ({itemImage}) => {
 
       <div className="portfolio_slide">
         <Image
-          src={itemImage}
+          src="/images/slide_2.png"
           alt="Slider"
           width={0}
           height={0}
@@ -67,7 +67,7 @@ const SlickSlider = ({itemImage}) => {
 
       <div className="portfolio_slide">
         <Image
-          src={itemImage}
+          src="/images/slide_1.png"
           alt="Slider"
           width={0}
           height={0}
